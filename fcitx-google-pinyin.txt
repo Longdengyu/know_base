@@ -1,0 +1,12 @@
+url:http://www.jb51.net/os/Ubuntu/203755.html
+command:
+sudo add-apt-repository ppa:fcitx-team/nightly
+sudo apt-get update
+
+
+sudo gedit /etc/apt/sources.list.d/fcitx-team-nightly-trusty.list
+
+#replace trusty with saucy
+
+sudo apt-get update
+sudo apt-get install fcitx-googlepinyin

@@ -1,0 +1,12 @@
+title: error install sougoupiyin
+url:http://blog.csdn.net/q1302182594/article/details/47068641
+command: sudo apt-get install -f
+
+
+
+url: http://www.ganiks.me/ubuntu-install-fcitx-and-sogoupinyin/
+
+
+
+title: 对安装包重新打包
+url: http://www.cnblogs.com/raybiolee/p/5693279.html

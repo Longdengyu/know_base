@@ -1,0 +1,2 @@
+url:http://jingyan.baidu.com/article/219f4bf7d4a183de442d38f2.html
+command:sudo apt-get install ibus-googlepinyin

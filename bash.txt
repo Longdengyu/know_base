@@ -1,0 +1,44 @@
+需要掌握的命令：
+
+文件编辑：vim
+
+行编辑
+
+文件查找：find
+
+字符串查找：grep
+
+网络：
+	ping
+	traceroute
+	dig
+	nslookup	
+	netstat
+	route
+	nc
+	arp
+	ethtool
+	iwconfig
+
+编程：
+	依赖：ldd
+	调试：gdb
+	编译：gcc
+	自动化编译：makefile
+
+操作系统：
+	开机启动
+	定时任务
+	
+
+
+磁盘：
+	dd
+	
+
+二进制：
+	hd
+
+设备：
+	
+	

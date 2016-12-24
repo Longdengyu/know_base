@@ -1,0 +1,5 @@
+查看分辨率：
+	ubuntu: xrandr	
+	浏览器：控制台输入 window.screen.availHeight, window.screen.availWidth
+
+

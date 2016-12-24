@@ -1,0 +1,51 @@
+内核模块目录：
+	 /lib/modules/$(shell uname -r)/build
+
+
+
+Makefile:
+	选项含义
+	-C： kernel source directory 内核源目录 该目录有内核top-level的Makefile
+	M： move back 在构建 modules前，make需要跳转到M指定的目录，然后才能构建modules
+
+obj-m:指定需要构建的模块目标
+
+module-objs：obj-m 构建依赖的文件
+
+modules：modules指向一个列表，该列表存的值都是 obj-m 指定的值
+
+modules.order
+
+.o 文件
+.ko 文件
+
+
+
+obj-m
+
+obj-mod-objs
+
+":=" 操作符是什么意思
+
+
+
+makefile demo：
+
+# If KERNELRELEASE is defined, we've been invoked from the
+# kernel build system and can use its language.
+ifneq ($(KERNELRELEASE),)
+    obj-m := hello.o 
+
+# Otherwise we were called directly from the command
+# line; invoke the kernel build system.
+else
+
+    KERNELDIR ?= /lib/modules/$(shell uname -r)/build
+    PWD  := $(shell pwd)
+
+default:
+    $(MAKE) -C $(KERNELDIR) M=$(PWD) modules
+
+endif
+
+

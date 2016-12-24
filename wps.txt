@@ -1,0 +1,27 @@
+
+/opt/kingsoft/wps-office/office6/wps: error while loading shared libraries: libgthread-2.0.so.0: cannot open shared object file: No such file or directory
+
+
+url:http://axlrose.blog.51cto.com/434566/1285314
+
+思路：这个问题是一类问题，核心是缺少库，只要将相应的库下载即可
+
+方法：
+	用ldd 查看 /opt/kingsoft/wps-office/office6/wps 引用的库都有哪些
+	把缺少的库列出来，不存在时候，会显示 not found
+	
+	因此：
+		
+		
+	得到：
+		ldd /opt/kingsoft/wps-office/office6/wps | grep found
+		       libSM.so.6 => not found
+		       libICE.so.6 => not found
+		       libXrender.so.1 => not found
+		       libfontconfig.so.1 => not found
+		       libfontconfig.so.1 => not found
+		       libXrender.so.1 => not found
+		       libfontconfig.so.1 => not found
+
+	就可以查找到所有缺少的包后，一次性安装
+	sudo aptitude install libpng12-0:i386 libsm6:i386 libice6:i386 libfontconfig1:i386 libxrender1:i386 libglib2.0-0:i386

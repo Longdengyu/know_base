@@ -1,0 +1,1 @@
+更新VDI的uuid：VBoxManage internalcommands sethduuid

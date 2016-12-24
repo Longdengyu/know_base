@@ -1,0 +1,11 @@
+内核模块：
+	insmod
+	rmmod
+	
+	depmod
+	modprobe
+
+设备：
+
+
+

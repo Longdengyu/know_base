@@ -1,0 +1,9 @@
+url:http://askubuntu.com/questions/158388/how-do-i-make-chromium-use-flash-from-google-chrome
+
+Download Google Chrome and extract libpepflashplayer.so from /opt/google/chrome/PepperFlash in the Chrome deb file Copy libpepflashplayer.so to /usr/lib/chromium-browser/plugins Make the necessary changes to the Chromium startup
+
+sudo gedit /etc/chromium-browser/default
+Add this to the CHROMIUM_FLAGS
+
+CHROMIUM_FLAGS="--ppapi-flash-path=/usr/lib/chromium-browser/plugins/libpepflashplayer.so --ppapi-flash-version=11.5.31.2"
+

@@ -1,0 +1,28 @@
+配置文件位置：
+	1. 当前用户配置：~/.gitconfig
+	2. 全局配置： /etc/gitconfig
+
+生成ssh key 方法：
+	
+
+
+常用命令：
+	git config --global user.name "{name}"
+	git config --global user.email "{email}"
+
+问题：添加了ssh key 之后 git clone 和 git push 都需要用户名和密码，为什么
+答：github提供了SSH和https，两种同步reop的方法，使用https的时候必须要用户名和密码，要改成SSH的方式，如git@github.com:Longdengyu/ijehseyib.git 即git@...形式的。
+
+
+
+
+.gitignore:
+	.gitignore文件对其所在的目录及所在目录的全部子目录均有效
+
+
+.gitignore 规则不生效：
+	原因是.gitignore只能忽略那些原来没有被track的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的。
+	那么解决方法就是先把本地缓存删除（改变成未track状态），然后再提交：
+	git rm -r --cached .
+	git add .
+	git commit -m 'update .gitignore'
