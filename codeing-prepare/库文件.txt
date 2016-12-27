@@ -1,0 +1,22 @@
+分类：
+	静态库
+	动态库
+
+命名：
+	静态库：libXXXX.a XXXX为库名
+	动态库：libXXXX.so.major.minor XXXX为库名，major，minor分别为主版本号，副版本号
+
+
+在ubuntu中遇到库文件缺少的情况的时候，怎么解决？
+
+答：
+	使用ldd 把缺少的库都找到，然后使用apt-get 或 aptitude 安装即可
+	
+	例如：
+	查找：
+		ldd /opt/kingsoft/wps-office/office6/wps | grep found
+		       libSM.so.6 => not found
+	安装：
+		sudo aptitude install libsm6:i386
+
+	安装的时候要指定版本号，如果软件本身是32位的，则需要指定架构，设为i386，架构名和库名用冒号隔开。

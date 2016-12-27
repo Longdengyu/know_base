@@ -1,0 +1,17 @@
+开发常用目录：
+	应用程序
+		/usr/bin/ :存放系统为正常使用提供的程序，包括用于程序开发的工具	tag: common
+		/usr/local/bin/ 或 /opt/ : 存放系统管理员为某个特定的主机或本地网络添加的程序 tag:admin personal
+	
+	头文件：
+		C语言：
+			/usr/include/
+				1. /usr/include/sys
+				2. /usr/include/linux
+
+
+			tips: gcc 的 -I 选项：指定include的目录
+	库文件：
+		1. /lib/
+		2. /usr/lib/
+	
