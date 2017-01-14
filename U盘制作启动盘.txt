@@ -1,0 +1,12 @@
+将U盘恢复为正常U盘：
+格式化不了：设U盘为/dev/sdb
+gdisk /dev/sdb
+w
+
+或者：sudo sgdisk --zap-all /dev/sdb
+再格式化才能格式化成功。
+
+read-only:
+先umount
+dosfsck -a /dev/sdb
+重新插入U盘。

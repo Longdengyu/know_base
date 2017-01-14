@@ -1,0 +1,7 @@
+默认字符界面启动：修改inittab
+查看运行级别：runlevel
+
+
+两种init：
+system v
+upstart（基于事件）
