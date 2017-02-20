@@ -1,0 +1,10 @@
+command to set numlock:setleds.
+
+ext:commands about the keyboard
+	keymaps
+	showkeys
+	loadkeys
+	dumpkeys
+	xmodmap
+
+	
