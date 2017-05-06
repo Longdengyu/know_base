@@ -1,0 +1,41 @@
+Linux 轻量化定制有一以下几个方面：
+0. 核心功能：
+
+a. 联网 
+b. 有包管理工具
+
+图形化配置：
+
+core：
+0. 显示管理器:lightdm gdm
+1. 窗口管理器:i3 openbox xface
+
+2. 终端 搭配快捷键(guake就很好，将其放到autostart中即可) tilda
+3. 字体 能够显示中文
+base:
+0. 中文输入法: google 拼音 搜狗拼音
+2. 文件管理器：ranger 
+3. 壁纸:livewallpager
+4. 网络管理器
+5. 翻译：translate-shell
+
+extra:消遣
+浏览器 + flash
+音乐：网易云音乐
+视频：vlc/mpv/mplayer/ffmpeg
+截图
+游戏：steam
+pdf:pdftk
+doc:WPS
+图片查看器
+网络管理器
+extra:程序员
+翻墙
+编辑器：sublime/atom
+虚拟化：virtualbox/qemu/dock/lxc
+
+其它：
+powerline:终端美化
+zsh：shell美化
+tmux：分屏
+
